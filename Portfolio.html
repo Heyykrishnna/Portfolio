@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Professional</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="Portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                Portfolio<span>.</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Hello, I'm <span>Creative Professional</span></h1>
+            <p>I design and develop digital experiences that blend creativity with clean code. I build websites that not only look stunning but also perform flawlessly across devices. With a passion for detail and a user-first mindset, I help brands thrive in the digital world through smart, scalable web solutions.</p>
+            <a href="#portfolio" class="cta-btn">View My Work</a>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src = "Profile Temp.jpeg">
+                </div>
+                <div class="about-text">
+                    <h3>Creative Professional with a passion for design</h3>
+                    <p>I am a dedicated creative professional with over 8 years of experience in designing and developing digital solutions for businesses across various industries. My goal is to create visually stunning and functional experiences that help my clients stand out in today's competitive market.</p>
+                    <p>I believe in a user-centered approach to design, ensuring that every project not only looks beautiful but also provides a seamless and intuitive experience for the end user. My process involves thorough research, thoughtful planning, and meticulous execution to deliver results that exceed expectations.</p>
+                    <div class="skills">
+                        <h4>My Skills</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Web Design</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Analysis</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Frontend Development</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Mobile App Design</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Video Editor / Photography</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" onclick="filterSelection('all')"> All </button>
+                <button class="filter-btn" onclick="filterSelection('web')">Web Design</button>
+                <button class="filter-btn" onclick="filterSelection('ui')">UI/UX</button>
+                <button class="filter-btn" onclick="filterSelection('branding')">Branding</button>
+                <button class="filter-btn" onclick="filterSelection('graphic')">Graphic Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Modern Website Design</h3>
+                        <p>Web Design / Development</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile App Interface</h3>
+                        <p>UI/UX Design</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity Design</h3>
+                        <p>Branding / Logo Design</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Print Materials Design</h3>
+                        <p>Graphic Design</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>Web Design / Development</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-img">
+                        <img src="Random Photo.png">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Dashboard Interface</h3>
+                        <p>UI/UX Design</p>
+                        <a href="https://lovely-soon-website-reveal.lovable.app/">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>I create beautiful, responsive websites that look great on all devices and deliver a seamless user experience. My designs combine visual appeal with intuitive navigation, ensuring every site is both engaging and easy to use. I focus on clean layouts, modern aesthetics, and functional design that meets both user needs and business goals.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>I work with data analysis using tools like SQL, Pandas, and other programming languages. With SQL, I query and manage structured data in databases. Pandas helps me manipulate and analyze datasets in Python, especially for tasks like cleaning, filtering, and aggregating data. I also use other languages like R or Python libraries such as NumPy and Matplotlib for deeper analysis and visualization. These tools help me turn raw data into useful insights efficiently.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I'm a web developer with a strong focus on frontend. I build responsive, user-friendly interfaces using HTML, CSS, JavaScript, and frameworks like React. I also have basic backend knowledge—enough to handle APIs, databases, and simple server setups using tools like Node.js or Express. I enjoy creating smooth, clean web experiences from design to deployment. </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3>Video Editor / Photography</h3>
+                        <p>I'm a video editor and photographer with a passion for visual storytelling. I shoot, edit, and create content that captures emotion and detail. From framing the perfect shot to crafting smooth edits, I focus on bringing ideas to life through visuals.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Design</h3>
+                        <p>I design user-friendly mobile applications that provide an exceptional user experience. My designs are tailored to meet the specific needs of your target audience while maintaining consistency with your brand identity.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Branding & Identity</h3>
+                        <p>I create cohesive brand identities that help businesses establish a strong presence in the market. From logo design to brand guidelines, I ensure that your brand communicates your values and resonates with your audience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">JD</div>
+                            <div class="author-info">
+                                <h4>John Doe</h4>
+                                <p>CEO, Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">JS</div>
+                            <div class="author-info">
+                                <h4>Jane Smith</h4>
+                                <p>Marketing Director, Brand Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">MJ</div>
+                            <div class="author-info">
+                                <h4>Michael Johnson</h4>
+                                <p>Founder, Digital Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Talk About Your Project</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question about my services or want to discuss a potential collaboration, feel free to reach out using the contact form or the information below.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    Madhya Pradesh, India
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <i>+91 798739****</i>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <b>khandelwalyatharth39@gmail.com</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://x.com/hey_krishnna" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/heyy_krishnna/" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yatharth-khandelwal-krishna/" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Heyykrishnna" class="social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>Thank you for visiting my portfolio. I look forward to working with you on your next project.</p>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="copyright">
+                        &copy; 2025 Portfolio. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Scroll to Top Button -->
+        <div class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <script src="Portfolio.js"></script>
